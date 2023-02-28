@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+    a {
+      display: inline-block;
+    }
+
+    .item {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .item .album img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .item .info a {
+      width: 100%;
+    }
+
+    .item .info p {
+      font-size: 15px;
+      margin-top: 8px;
+
+      /* 显示一行 */
+      /* white-space: nowrap; */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* 有些浏览器可能不支持-webkit-box */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .item .info .author {
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    .item .info .author::before {
+      content: url(./images/widget-up.svg);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 2px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="item">
+    <div class="album">
+      <a href="#">
+        <!-- 图片不能获取需要添加属性：referrerpolicy="no-referrer" -->
+      <img src="https://i2.hdslb.com/bfs/archive/9912bf45888fa4d8755ac529896db723d0a6d0a8.jpg@672w_378h_1c_!web-home-common-cover.avif" referrerpolicy="no-referrer" alt="">
+      </a>
+    </div>
+    <div class="info">
+      <a href="#">
+        <p>极致烧脑！七重反转！ 909个美国人集体自杀，背后真相细思极恐！日本推理巅峰之作！名侦探的牺牲品，名侦探的祭物</p>
+      </a>
+        <a class="author" href="#">
+          <span class="nickname">-小黑鸟-</span>
+          <span class="time">2-4</span>
+        </a>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
