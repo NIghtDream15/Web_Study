@@ -1,0 +1,96 @@
+/* body */
+body {
+  font: 12px Arial, Helvetica, sans-serif;
+}
+
+/* 内部包裹区域 */
+.wrapper_01 {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper_02 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.wrapper_03 {
+  width: 982px;
+  margin: 0 auto;
+}
+
+.topbar_sprite {
+  display: inline-block;
+  background-image: url(../images/topbar.png);
+}
+
+.topbar_icon_hot {
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
+}
+
+.btn_sprite {
+  display: inline-block;
+  background: url(..//images/button2.png) no-repeat;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.btn_type_01_sup {
+  background-position: right -100px;
+  padding-right: 5px;
+}
+
+.btn_type_01_sub {
+  display: block;
+  background-position: 0 -59px;
+  padding-left: 3px;
+  height: 31px;
+}
+
+.btn_type_favor_sup {
+  padding-right: 5px;
+  background-position: right -1020px;
+}
+
+.btn_type_favor_sub {
+  display: inline-block;
+  padding-left: 28px;
+  padding-right: 3px;
+  background-position: 0 -977px;
+}
+
+.sprite_01 {
+  background-image: url(../images/music_sprite_02.png);
+  display: inline-block;
+}
+
+.icon_sprite {
+  background-image: url(../images/music_sprite_03.png);
+  display: inline-block;
+}
+
+.icon_sprite_music {
+  width: 14px;
+  height: 11px;
+  background-position: 0 -24px;
+}
+
+.icon_sprite_play_01 {
+  width: 16px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.iconall_sprite {
+  display: inline-block;
+  background-image: url(../images/icon_all.png);
+}
+
+.iconall_sprite_radio {
+  background-position: -31px -658px;
+  width: 35px;
+  height: 15px;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王者荣耀-main-news</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .main {
+      height: 100px;
+    }
+
+    .main .news-section {
+      display: flex;
+      height: 342px;
+      background: url(./img/news_bg.png) no-repeat;
+    }
+
+    .main .news-section .banner {
+      width: 605px;
+    }
+
+    .main .news-section .banner .image-list {
+      width: 604px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .main .news-section .banner .image-list .item {
+      flex-shrink: 0;
+      width: 100%;
+    }
+
+    .main .news-section .banner .image-list .item a {
+      display: block;
+    }
+
+    .main .news-section .banner .image-list .item a img {
+      width: 100%;
+    }
+
+    .main .news-section .banner .title-list {
+      display: flex;
+      height: 44px;
+      line-height: 44px;
+    }
+
+    .main .news-section .banner .title-list .item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .main .news-section .banner .title-list .item a {
+      display: block;
+      color: #b1b2be;
+    }
+
+    .main .news-section .banner .title-list .item.active a,
+    .main .news-section .banner .title-list .item a:hover {
+      color: #f3c258;
+      background-color: rgba(255,255,255,0.15);
+    }
+
+    .main .news-section .news {
+      flex: 1;
+      overflow: hidden;
+      padding: 0 17px;
+    }
+
+    .main .news-section .news .title-list {
+      display: flex;
+      height: 48px;
+      border-bottom: 1px solid #000;
+    }
+
+    .main .news-section .news .title-list .item {
+      width: 52px;
+    }
+
+    .main .news-section .news .title-list .item a {
+      display: block;
+      height: 48px;
+      box-sizing: border-box;
+      line-height: 48px;
+      color: #b8b9c5;
+      text-align: center;
+
+      transition: border-bottom .225s ease-out;
+    }
+
+    .main .news-section .news .title-list .item.active a,
+    .main .news-section .news .title-list .item:not(.more) a:hover {
+      color: #f3c258;
+      border-bottom: 3px solid #f3c258;
+    }
+
+    .main .news-section .news .notice {
+      height: 36px;
+      line-height: 36px;
+      margin-top: 18px;
+      padding: 0 15px;
+      background: #414046;
+    }
+
+    .main .news-section .news .notice > a {
+      display: block;
+      color: #f3c258;
+      font-size: 18px;
+    }
+
+    .main .news-section .news .news-list{
+      margin-top: 12px;
+    }
+
+    .main .news-section .news .news-list .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+    }
+
+    .main .news-section .news .news-list .item .desc {
+      flex: 1;
+      color: #b8b9c5;
+    }
+
+    
+
+    .main .news-section .news .news-list .item .date {
+      padding: 0 8px;
+      color: #999;
+      font-size: 12px;
+    }
+
+    .main .news-section .download {
+      width: 236px;
+      background-color: skyblue;
+    }
+
+    .main .news-section .download a {
+      display: block;
+      background: url(./img/main_sprite.png);
+    }
+
+    .main .news-section .download a.download-btn {
+      height: 128px;
+      background-position: 0 -219px;
+    }
+
+    .main .news-section .download a.guard-btn {
+      height: 106px;
+      background-position: 0 -350px;
+    }
+
+    .main .news-section .download a.experience-btn {
+      height: 108px;
+      background-position: 0 -461px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="main main_wrapper">
+    <div class="news-section">
+      <div class="banner">
+        <ul class="image-list">
+          <li class="item">
+            <a href="">
+              <img src="./img/banner_01.jpeg" alt="">
+            </a>
+          </li>
+          <li class="item">
+            <a href="">
+              <img src="./img/banner_01.jpeg" alt="">
+            </a>
+          </li>
+        </ul>
+        <ul class="title-list">
+          <li class="item active">
+            <a href="#">镜玫瑰异探语音</a>
+          </li>
+          <li class="item">
+            <a href="#">合金弹头4月上线</a>
+          </li>
+          <li class="item">
+            <a href="#">城市主理人招募</a>
+          </li>
+          <li class="item">
+            <a href="#">春季赛TOP5</a>
+          </li>
+          <li class="item">
+            <a href="#">荣耀大话王</a>
+          </li>
+        </ul>
+      </div>
+      <div class="news">
+        <ul class="title-list">
+          <li class="item active">
+            <a href="">热门</a>
+          </li>
+          <li class="item">
+            <a href="">新闻</a>
+          </li>
+          <li class="item">
+            <a href="">公告</a>
+          </li>
+          <li class="item">
+            <a href="">活动</a>
+          </li>
+          <li class="item">
+            <a href="">赛事</a>
+          </li>
+          <li class="item more">
+            <a href="">...</a>
+          </li>
+        </ul>
+
+        <p class="notice">
+          <a class="nowrap_ellipsis" href="#">街机神作！《合金弹头：觉醒》手游正式定档四月上线！</a>
+        </p>
+
+        <ul class="news-list">
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_hot" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_hot" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_hot" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_hot" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_news" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_notice" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+          <li class="item">
+            <a class="desc nowrap_ellipsis news_type news_type_news" href="#">
+              星梦大赛首轮投票启动，让你的大乔万里挑“一”！
+            </a>
+            <span class="date">03/16</span>
+          </li>
+        </ul>
+
+      </div>
+      <div class="download">
+        <a class="download-btn" href="#"></a>
+        <a class="guard-btn" href="#"></a>
+        <a class="experience-btn" href="#"></a>
+      </div>
+    </div>
+    <div class="content-section"></div>
+    <div class="match-section"></div>
+  </div>
+
+</body>
+</html>

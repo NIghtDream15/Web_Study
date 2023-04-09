@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1817747",
+      "name": "弹幕",
+      "font_class": "danmu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "9927999",
+      "name": "video",
+      "font_class": "video",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    }
+  ]
+}
